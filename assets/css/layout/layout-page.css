@@ -1,0 +1,95 @@
+.slider-custom .flickity-slider > * {
+	bottom: 0;
+}
+
+.box-default.box-text-bottom {
+}
+.box-default.box-text-bottom .box-image {
+	display: flex;
+}
+.box-default.box-text-bottom .box-image .box-image-inner {
+	flex: 1;
+}
+.box-default.box-text-bottom .box-image .social-icons {
+	display: flex;
+	flex-flow: column;
+	margin-left: 10px;
+}
+.box-default.box-text-bottom .box-image .social-icons .icon {
+	margin: 0;
+	border-radius: 0 !important;
+}
+.box-default.box-text-bottom .box-image .social-icons .icon:not(:first-child) {
+	border-top: unset;
+}
+
+.wrap_btn_submit .wpcf7-submit.btn-submit {
+	border-radius: 99px;
+	padding: 5px 50px;
+	border-width: 2px !important;
+	font-weight: 600 !important;
+}
+.wrap_field .wpcf7-form-control {
+	border-radius: 5px !important;
+}
+
+.slider-custom-nav .flickity-prev-next-button .arrow, 
+.slider-custom-nav .flickity-prev-next-button svg {
+	border-radius: 0 !important;
+	background-color: var(--primary-color) !important;
+	opacity: 1 !important;
+	color: #fff;
+	fill: #fff !important;
+	border-color: var(--primary-color) !important;
+}
+.slider-custom-nav .slider-show-nav .flickity-prev-next-button, 
+.slider-custom-nav .slider:hover .flickity-prev-next-button {
+	opacity: 1;
+}
+.slider-custom-nav .flickity-prev-next-button {
+	right: -15px !important;
+}
+.slider-custom-nav .flickity-prev-next-button.previous {
+	right: unset !important;
+	left: -15px !important;
+}
+.slider-custom-nav .slider-show-nav .flickity-prev-next-button {
+  	top: 40% !important;
+}
+.slider-custom-nav .slider-show-nav .flickity-prev-next-button, 
+.slider-custom-nav .slider:hover .flickity-prev-next-button {
+}
+
+.page-wrapper.blog-wrapper {
+	padding-bottom: 70px;
+	padding-top: 70px;
+}
+
+#commentform .error {
+	font-size: 12px;
+	margin-top: -5px;
+	color: var(--alert-color);
+}
+
+@media screen and (max-width: 1080px) {
+	.is-xlarge.form-box {
+		font-size: 1em;
+	}
+	.follow-icons.contact-follow {
+		font-size: 1em !important;
+	}
+	.page-wrapper.blog-wrapper {
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 549px) {
+	.is-xlarge.form-box {
+		font-size: 1.5em;
+	}
+	.follow-icons.contact-follow {
+		font-size: 1.5em !important;
+	}
+
+}

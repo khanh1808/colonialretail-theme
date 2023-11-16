@@ -1,0 +1,10 @@
+.footer-menu ul li {
+    list-style: none;
+    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 549px) {
+    .footer-title {
+        margin-bottom: 5px !important;
+    }
+}
