@@ -18,3 +18,7 @@
         margin: 0 10px;
     }
 }
+
+ul.header-nav-main > li .menu-item a {
+    color: #fff;
+}
