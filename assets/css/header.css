@@ -5,6 +5,10 @@
     font-weight: 500;
 }
 
+.header-main .nav > li > a.tooltip:hover {
+    color: #A4EAFF;
+}
+
 #masthead .flex-col.hide-for-medium.flex-right li a i:before {
     font-size: 20px;
     display: flex;
