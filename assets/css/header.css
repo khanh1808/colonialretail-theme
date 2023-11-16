@@ -1,0 +1,18 @@
+.header-main .nav > li > a.tooltip {
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+#masthead .flex-col.hide-for-medium.flex-right li a i:before {
+    font-size: 20px;
+    display: flex;
+    color: #A4EAFF;
+}
+.nav-dark .nav-divided>li+li>a:after {
+    display: none;
+}
+.nav>li>a>i+span {
+    margin-left: 8px !important;
+}
