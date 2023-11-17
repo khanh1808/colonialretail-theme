@@ -12,12 +12,18 @@
     line-height: 24px;
 }
 
-.product-small .box-text .title-wrapper .box-excerpt>strong {
+.product-small .box-text .title-wrapper .box-excerpt {
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.product-small .box-text .title-wrapper .box-excerpt>strong {
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
