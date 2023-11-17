@@ -6,10 +6,8 @@ function hte_remove_action_woo() {
 	remove_action('woocommerce_after_main_content','flatsome_pages_in_search_results', 10);
 	remove_action( 'flatsome_product_box_after', 'flatsome_woocommerce_shop_loop_excerpt', 20 );
 	remove_action( 'flatsome_product_box_actions', 'flatsome_product_box_actions_add_to_cart', 1 );
-	// remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
-	// remove_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
-	
 	remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
+	// remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 
 	add_action('woocommerce_shop_loop_item_title', 'flatsome_woocommerce_shop_loop_excerpt', 30);
 
@@ -19,12 +17,12 @@ add_action( 'init', 'hte_remove_action_woo' );
 add_action( 'woocommerce_after_shop_loop_item_title', function() {
 	echo '<div class="wrap_right_action">';
 		woocommerce_template_loop_rating();
-}, 50 );
+}, 90 );
 
 add_action( 'woocommerce_after_shop_loop_item_title', function() {
 		flatsome_product_box_actions_add_to_cart();
 	echo '</div>';
-}, 50 );
+}, 100 );
 
 add_filter('woocommerce_loop_add_to_cart_link', function($btn_html, $product, $args) {
 	$btn_html = sprintf(
