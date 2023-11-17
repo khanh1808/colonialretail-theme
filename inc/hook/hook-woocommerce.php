@@ -4,8 +4,28 @@ function hte_remove_action_woo() {
 	remove_action( 'woocommerce_share', 'flatsome_product_share',  10 );
 	remove_action( 'flatsome_sale_flash','woocommerce_show_product_sale_flash',10 );
 	remove_action('woocommerce_after_main_content','flatsome_pages_in_search_results', 10);
+	remove_action( 'flatsome_product_box_after', 'flatsome_woocommerce_shop_loop_excerpt', 20 );
+	remove_action( 'flatsome_product_box_actions', 'flatsome_product_box_actions_add_to_cart', 1 );
+
+	add_action('woocommerce_shop_loop_item_title', 'flatsome_woocommerce_shop_loop_excerpt', 30);
+	add_action( 'woocommerce_after_shop_loop_item_title', 'flatsome_product_box_actions_add_to_cart', 50 );
+
 }
 add_action( 'init', 'hte_remove_action_woo' );
+
+add_filter('woocommerce_loop_add_to_cart_link', function($btn_html, $product, $args) {
+	$btn_html = sprintf(
+		'<a href="%s" data-quantity="%s" class="%s" %s>%s</a>',
+		esc_url( $product->add_to_cart_url() ),
+		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
+		esc_attr( isset( $args['class'] ) ? $args['class'] : 'button' ),
+		isset( $args['attributes'] ) ? wc_implode_html_attributes( $args['attributes'] ) : '',
+		'<img class="oc_add_to_cart_icon" src="'.THEME_IMAGE.'/cart.svg" width="18" height="18"/>'
+	);
+
+	return $btn_html;
+}, 10, 3);
+	
 
 add_filter( 'woocommerce_short_description', function($post_excerpt) {
 	if (is_singular('product')) {
