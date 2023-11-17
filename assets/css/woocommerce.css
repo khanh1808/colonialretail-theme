@@ -55,10 +55,7 @@
 
 .product-small .box-text .price-wrapper .wrap_right_action {
     display: flex;
-}
-
-.product-small .box-text .price-wrapper .wrap_right_action .star-rating {
-    margin: 0;
+    align-items: baseline;
 }
 
 .product-small .box-text .price-wrapper .wrap_right_action .add_to_cart_button {
