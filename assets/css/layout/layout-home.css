@@ -22,6 +22,13 @@
 	top: 10px;
 	margin-left: 8px;
 }
+.col-inner h2.uppercase,h2.mb-0, h2 strong {
+	font-size: 40px;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
 @media screen and (max-width: 1440px) {
 
 }
