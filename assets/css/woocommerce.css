@@ -1,0 +1,36 @@
+p.category.uppercase.is-smaller.no-text-overflow.product-cat.op-7 {
+    color: #006E8F;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+p.name.product-title.woocommerce-loop-product__title {
+    color: #283243;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+p.box-excerpt.is-small {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    color: #827D7D;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    -webkit-line-clamp: 2;
+}
+
+strong {
+    color: #827D7D;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.price-wrapper {
+    display: flex;
+}
