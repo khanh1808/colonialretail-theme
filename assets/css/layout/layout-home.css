@@ -1,7 +1,6 @@
 .sub-line:after {
 	position: absolute;
 	content: "";
-	display: block;
 	height: 1px;
 	width: 60px;
 	background-color: #006E8F;
