@@ -1,3 +1,9 @@
+.sub-line {
+	color: #006E8F;
+	font-size: 14;
+	font-weight: 500;
+	line-height: 1;
+}
 .sub-line:after {
 	position: absolute;
 	content: "";
