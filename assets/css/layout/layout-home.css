@@ -22,7 +22,7 @@
 	top: 10px;
 	margin-left: 8px;
 }
-.col-inner h2.uppercase,h2.mb-0, h2 strong {
+.col-inner h2.uppercase, .mb-0 strong{
 	font-size: 40px;
     font-weight: 700 !important;
     line-height: 40px !important;
