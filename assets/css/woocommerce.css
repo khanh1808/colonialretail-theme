@@ -31,6 +31,8 @@
 
 .product-small .box-text .price-wrapper {
     display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
 }
 
 .product-small .box-text .price del {
@@ -53,4 +55,18 @@
 
 .product-small .box-text .price-wrapper .wrap_right_action {
     display: flex;
+}
+
+.product-small .box-text .price-wrapper .wrap_right_action .star-rating {
+    margin: 0;
+}
+
+.product-small .box-text .price-wrapper .wrap_right_action .add_to_cart_button {
+    margin: 0;
+    background: transparent;
+    border: none;
+}
+
+.product-small .box-text .price-wrapper .wrap_right_action .add_to_cart_button:hover {
+    background: transparent;
 }
