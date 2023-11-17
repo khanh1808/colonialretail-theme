@@ -29,21 +29,21 @@
     line-height: 20px;
 }
 
-.product-small .box-text .title-wrapper .price-wrapper {
+.product-small .box-text .price-wrapper {
     display: flex;
 }
 
-.product-small .box-text .title-wrapper .price del {
+.product-small .box-text .price del {
     display: none;
 }
 
-.product-small .box-text .title-wrapper .price ins .woocommerce-Price-amount {
+.product-small .box-text .price ins .woocommerce-Price-amount {
     color: #f22;
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
 }
 
-.product-small .box-text .title-wrapper .price-wrapper .wrap_right_action {
+.product-small .box-text .price-wrapper .wrap_right_action {
     display: flex;
 }
