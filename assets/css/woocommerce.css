@@ -65,8 +65,16 @@
     margin: 0;
     background: transparent;
     border: none;
+    padding: 0;
 }
 
 .product-small .box-text .price-wrapper .wrap_right_action .add_to_cart_button:hover {
     background: transparent;
+    box-shadow: none;
+}
+
+.product-small .box-text .price-wrapper .wrap_right_action .add_to_cart_button .oc_add_to_cart_icon {
+    filter: brightness(0);
+    vertical-align: baseline;
+    margin-left: 8px;
 }
