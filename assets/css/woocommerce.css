@@ -23,7 +23,7 @@ p.box-excerpt.is-small {
     line-height: 20px;
 }
 
-.mb-0 strong {
+.title-wrapper .mb-0 strong {
     color: #827D7D;
     font-size: 12px;
     font-weight: 400;
