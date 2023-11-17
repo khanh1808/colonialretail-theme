@@ -1,3 +1,14 @@
+.product-category .box-category .box-text .box-text-inner .header-title {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 24px;
+}
 .product-small .box-text .title-wrapper .product-cat {
     color: #006E8F;
     font-size: 10px;
