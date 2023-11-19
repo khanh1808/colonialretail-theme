@@ -1,6 +1,6 @@
 <?php
 function hte_remove_action_woo() {
-	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+	// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 	remove_action( 'woocommerce_share', 'flatsome_product_share',  10 );
 	remove_action( 'flatsome_sale_flash','woocommerce_show_product_sale_flash',10 );
 	remove_action('woocommerce_after_main_content','flatsome_pages_in_search_results', 10);
@@ -37,14 +37,6 @@ add_filter('woocommerce_loop_add_to_cart_link', function($btn_html, $product, $a
 	return $btn_html;
 }, 10, 3);
 	
-
-add_filter( 'woocommerce_short_description', function($post_excerpt) {
-	if (is_singular('product')) {
-		$post_excerpt = '<h3 class="uppercase mb mt">'.__('Thông tin sản phẩm', DOMAIN).'</h3>'.$post_excerpt;
-	}
-	return $post_excerpt;
-}, 10);
-
 add_action( 'woocommerce_share', function() {
 	?>
 	<div class="share-bottom-product flex align-middle justify-start">

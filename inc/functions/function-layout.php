@@ -87,4 +87,4 @@ function add_content_after_header() {
     ';
     echo do_shortcode( $content_banner );
 }
-add_action ('flatsome_after_header' , 'add_content_after_header');
+// add_action ('flatsome_after_header' , 'add_content_after_header');
