@@ -82,7 +82,9 @@ a .icon-search:before{
     }
 }
 .nav-line-bottom > li > a:before{
-    background-color: var(--secondary-color) !important;
+    background-color: #fff !important;
+    height: 1px !important;
+    bottom: 5px !important;
 }
 
 
