@@ -230,6 +230,12 @@ h1, h2, h3, h4, h5, h6 {
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
 	font-weight: normal !important;
 }
+
+.off-canvas-left .mfp-content, 
+.off-canvas-right .mfp-content {
+	width: 100% !important;
+}
+
 @media screen and (min-width: 850px) {
 	.res-text {
 		font-size: 18px;
